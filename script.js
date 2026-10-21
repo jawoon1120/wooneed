@@ -25,9 +25,9 @@ document.addEventListener('click', event => { if (!event.target.closest('.site-h
 window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
 
 const scenes = {
-  privacy: { time: '00:12', label: '개인정보 확인 후보', text: '인물이 포함된 구간을 확인하고, 공개 전 동의 여부와 가림 처리 필요성을 검토해 주세요.', position: 'privacy', progress: '12%' },
-  restriction: { time: '00:48', label: '촬영·출입 제한 안내 확인', text: '촬영 장소의 안내문에 제한 사항이 있는지 살펴보는 기능의 예시입니다. 실제 안내 내용과 적용 범위는 직접 확인해 주세요.', position: 'restriction', progress: '39%' },
-  source: { time: '01:26', label: '공식 자료와 함께 검토', text: '분석 결과와 관련된 공식 자료를 함께 확인하는 기능의 예시입니다. 실제 자료 링크는 서비스에서 제공할 예정입니다.', position: 'source', progress: '67%' },
+  privacy: { time: '00:12', label: '개인정보 확인 후보', text: '인물이 포함된 구간을 확인하고, 공개 전 동의 여부와 가림 처리 필요성을 검토해 주세요.', progress: '12%' },
+  restriction: { time: '00:48', label: '촬영·출입 제한 안내 확인', text: '촬영 장소의 안내문에 제한 사항이 있는지 살펴보는 기능의 예시입니다. 실제 안내 내용과 적용 범위는 직접 확인해 주세요.', progress: '39%' },
+  source: { time: '01:26', label: '공식 자료와 함께 검토', text: '분석 결과와 관련된 공식 자료를 함께 확인하는 기능의 예시입니다. 실제 자료 링크는 서비스에서 제공할 예정입니다.', progress: '67%' },
 };
 document.querySelectorAll('[data-scene]').forEach(button => {
   button.addEventListener('click', () => {
@@ -40,7 +40,7 @@ document.querySelectorAll('[data-scene]').forEach(button => {
     document.querySelector('#video-time').textContent = `${scene.time} / 02:34`;
     document.querySelector('#detection-label').textContent = scene.label;
     document.querySelector('#detail-text').textContent = scene.text;
-    document.querySelector('#detection-box').className = `detection-box ${scene.position}`;
+    document.querySelector('#detection-box').className = `detection-box ${button.dataset.scene}`;
     document.querySelector('#playhead').style.left = scene.progress;
   });
 });
