@@ -18,3 +18,9 @@ Node.js 18 이상에서 `npm run dev`를 실행하고 http://localhost:3000 에 
 - 회사 소개 문단은 제공된 사업 방향을 바탕으로 작성한 초안입니다. 실제 창업 배경과 일치하는지 공개 전에 검토해 주세요.
 - 현재 개인정보를 수집하거나 외부 분석·추적 도구를 사용하지 않습니다. 사전 신청 폼 등을 도입할 경우 실제 처리 방식에 맞는 수집 안내와 개인정보 처리방침을 함께 준비해야 합니다.
 - 보안, 보관 기간, 학습 사용 여부 등에 대한 미확인 약속은 포함하지 않았습니다.
+
+## 글꼴
+
+- 제목과 본문: [Wanted Sans Variable v1.0.3](https://github.com/wanteddev/wanted-sans/releases/tag/v1.0.3), 원티드랩 제작.
+- 웹폰트 원본을 `assets/fonts/WantedSansVariable.woff2`에 포함해 외부 폰트 서비스 없이 제공합니다. 제목의 자간과 본문 자간을 별도로 조정했습니다. 기존 우니드 워드마크는 유지합니다.
+- SIL Open Font License 1.1에 따른 상업적 사용 가능 글꼴입니다. 배포 시 `assets/fonts/OFL-Wanted-Sans.txt`를 함께 유지합니다.
